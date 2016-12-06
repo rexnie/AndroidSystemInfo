@@ -32,8 +32,13 @@ public class AppListActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_app_list);
         findViewById(R.id.btn_pm_all_app).setOnClickListener(this);
+        findViewById(R.id.btn_pm_system_app).setOnClickListener(this);
+        findViewById(R.id.btn_pm_3rd_app).setOnClickListener(this);
+        findViewById(R.id.btn_pm_sdcard_app).setOnClickListener(this);
+
         mListView = (ListView) findViewById(R.id.lv_app_list);
         mListView.setEmptyView(findViewById(R.id.tv_empty_view));
 
@@ -49,6 +54,21 @@ public class AppListActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.btn_pm_all_app:
                 mAdapter.updateData(getAppInfo(ALL_APP));
                 mAdapter.notifyDataSetChanged();
+                break;
+            case R.id.btn_pm_system_app:
+                mAdapter.updateData(getAppInfo(SYSTEM_APP));
+                mAdapter.notifyDataSetChanged();
+                break;
+            case R.id.btn_pm_3rd_app:
+                mAdapter.updateData(getAppInfo(THIRD_APP));
+                mAdapter.notifyDataSetChanged();
+                break;
+            case R.id.btn_pm_sdcard_app:
+                mAdapter.updateData(getAppInfo(SDCARD_APP));
+                mAdapter.notifyDataSetChanged();
+                break;
+            default:
+                Log.e(TAG, "onClick: unknown id");
                 break;
         }
     }

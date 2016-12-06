@@ -11,33 +11,29 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/btn_pm_all_app"
             android:text="AllApp"
             android:textAllCaps="false"/>
 
         <Button
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/btn_pm_system_app"
             android:text="SystemApp"
             android:textAllCaps="false"/>
 
         <Button
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/btn_pm_3rd_app"
-            android:text="ThirdPartyApp"
+            android:text="3rdPartyApp"
             android:textAllCaps="false"/>
 
         <Button
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/btn_pm_sdcard_app"
             android:text="SdcardApp"
             android:textAllCaps="false"/>
@@ -53,7 +49,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/tv_empty_view"
-        android:text="List is empty"
-        android:layout_gravity="center"/>
+        android:text="List is empty"/>
 
 </LinearLayout>
