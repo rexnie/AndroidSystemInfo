@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".AppListActivity">
         </activity>
+        <activity android:name=".ProcessInfoListActivity">
+        </activity>
     </application>
 
 </manifest>

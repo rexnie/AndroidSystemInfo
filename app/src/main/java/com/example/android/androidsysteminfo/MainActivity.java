@@ -12,12 +12,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn_pm_test).setOnClickListener(this);
+        findViewById(R.id.btn_am_test).setOnClickListener(this);
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_pm_test:
                 startActivity(new Intent(this, AppListActivity.class));
+                break;
+            case R.id.btn_am_test:
+                startActivity(new Intent(this, ProcessInfoListActivity.class));
                 break;
         }
     }

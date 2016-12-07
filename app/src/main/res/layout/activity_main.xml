@@ -11,4 +11,11 @@
         android:id="@+id/btn_pm_test"
         android:text="PackageManager"
         android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_am_test"
+        android:text="ActivityManager"
+        android:textAllCaps="false"/>
 </LinearLayout>
